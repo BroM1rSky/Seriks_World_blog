@@ -1,0 +1,327 @@
+/*Cargar fuentes*/
+@font-face {
+    font-family: "fajala";
+    src: url("../fonts/fuente.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+body{
+    background: url(../img/cubes.png) #F4F4F4;
+}
+
+/*Cabezera*/
+
+#header{
+    width: 85%;
+    height: auto;
+    background: transparent;
+    margin: 0px auto;
+    /*border: 1px solid black;*/
+}
+
+/*Logotype*/
+
+#logo{
+    float: left;
+    width: 540px;
+    height: 110px;
+}
+
+#logo a{
+    font-family: "fajala",Helvetica;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #2979CD;
+    text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+    transition: all 500ms;
+    line-height: 90px;
+    margin-left: 10px;
+}
+
+#logo a:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 0px black, -1px -1px 0px black, -2px -2px 0px black;
+}
+
+/*nav*/
+
+#nav{
+    clear: both;
+    width: 100%;
+    background: linear-gradient(to bottom, #f9f9f9 0px, #e9e9e9 100%);
+    height: 40px;
+    border: solid 1px #C9C9C9;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px #ccc;
+    overflow: hidden;
+}
+
+#nav ul{
+    list-style: none;
+}
+
+#nav ul li{
+    float: left;
+    line-height: 40px;
+    border-right: 1px solid #D6D6D6;
+}
+
+#nav ul li a{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    color: #838282;
+}
+
+#nav ul li a:hover {
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+}
+
+
+/*Contenido*/
+
+#container{
+    width: 85%;
+    height: auto;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*SideBar*/
+
+#sidebar{
+    float: right;
+    width: 25%;
+    height: auto;
+}
+
+.block-aside{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 25px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.3),0px 3px 7px rgba(0,0,0,0.3), 0px 0px #FFFFFF inset, 0px -3px 2px rgba(0,0,0,0.25) inset;
+}
+
+.block-aside h3{
+    margin-bottom: 15px;
+}
+
+label,
+input[type=text],
+input[type=email],
+input[type=password]{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type=button],
+input[type=submit],
+.button{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #007ee5;
+    color: white;
+    border: 2px solid #156785;
+    padding: 5px;
+}
+
+.button{
+    display: block;
+    width: 130px;
+    text-align: center;
+    border: 2px solid rgb(0, 75, 121);
+}
+
+.button-white{
+    background-color:rgb(40, 122, 255);
+}
+
+.button-red{
+    background-color: rgb(40, 122, 255);
+}
+
+.button-blue{
+    background-color: rgb(40, 122, 255);
+}
+
+.principal{
+    float: left;
+    width: 65%;
+    min-height:550px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #eee;
+    overflow: hidden;
+    padding: 20px;
+}
+.principal a{
+    color: #333;
+}
+.principal h1{
+    font-size: 32px;
+    color: #555;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #ccc;
+    font-family: "fajala";
+}
+
+.principal h2{
+    font-size: 20px;
+    color: #2979CD;
+    letter-spacing: 1px;
+    font-family: "fajala";
+    margin-top: 25px;
+}
+
+#see-all a{
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #007ee5;
+    text-align: center;
+    width: 25%;
+    color: white;
+    margin: 0px auto;
+    margin-top: 75px;
+    border: 2px solid #156785;
+}
+
+footer{
+    clear: both;
+    width: 85%;
+    margin: 0px auto;
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    border: 1px solid #c9c9c9;
+    border-bottom:none ;
+    border-radius: 8px 8px 0px 0px;
+    color: #666;
+    height: auto;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alert{
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0px 1px 3px #ccc;
+    margin-bottom: 15px;
+    border-radius: 4px;
+
+}
+
+.alert-error{
+    background: red;
+}
+
+.alert-ok{
+    background: rgb(8, 177, 8);
+}
+
+.fecha{
+    color: #6e6e6e;
+    font-size: 14px;
+}
+
+.inform{
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.form-categories{
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: solid 2px #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+}
+
+.submit-category{
+    width: 100%;
+    border: 0.1px solid blue;
+}
+
+.form-posts{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    border: solid 2px #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    overflow: hidden;
+}
+
+.textarea-post{
+    padding: 10px;
+    overflow: hidden;
+    width: 95%;
+    height: 350px;
+}
+
+.form-account{
+
+    display: block;
+    width: 40%;
+    float: left;
+    border: solid 2px #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    overflow: hidden;
+}
+
+.form-account2{
+    clear: none;
+    display: block;
+    width: 40%;
+    float: right;
+    border: solid 2px #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #f2f2f2 0px, #dad9d4 100%);
+    overflow: hidden;
+}
+
+.account{
+    overflow: hidden;
+    margin-top: 65px;
+    padding: 15px;
+
+}
